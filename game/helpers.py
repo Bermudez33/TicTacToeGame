@@ -1,8 +1,13 @@
-PLAYER1 = 'X'
-PLAYER2 = 'O'
-print('Choose the size of the board: ')
-BOARDSIZE = int(input())
-print(f"The board is: {BOARDSIZE} x {BOARDSIZE}")
+# PLAYER1 = 'X'
+# PLAYER2 = 'O'
+PLAYER1 = 'Player1'
+PLAYER2 = 'Player2'
+BOARDSIZE = 3
+#print('Choose the size of the board: ')
+#BOARDSIZE = int(input())
+#print(f"The board is: {BOARDSIZE} x {BOARDSIZE}")
+
+#Game logic
 def print_winner(player):
     print(f'{player} wins!')
 
@@ -30,3 +35,6 @@ def diagonal_winner(board):
 
 def winner(board):
     return row_winner(board) or column_winner(board) or diagonal_winner(board)
+
+
+#GUI Logic
